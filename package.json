@@ -5,7 +5,6 @@
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
-    "preinstall": "npm install typescript",
     "prepare": "npm install --production=false",
     "dev": "concurrently \"tsc -w\" \"nodemon dist/server.js\"",
     "start": "node dist/server.js"
@@ -19,7 +18,8 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "mongoose": "^8.7.1",
-    "openai": "^4.67.3"
+    "openai": "^4.67.3",
+    "typescript": "^5.6.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
