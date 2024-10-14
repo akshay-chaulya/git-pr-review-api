@@ -5,6 +5,8 @@
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
+    "preinstall": "npm install typescript",
+    "prepare": "npm install --production=false",
     "dev": "concurrently \"tsc -w\" \"nodemon dist/server.js\"",
     "start": "node dist/server.js"
   },
