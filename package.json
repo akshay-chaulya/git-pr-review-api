@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/server.js",
   "scripts": {
-    "watch": "tsc -w",
-    "dev": "nodemon dist/server.js",
-    "start": "concurrently \"npm run watch\" \"npm run dev\""
+    "build": "tsc",
+    "dev": "concurrently \"tsc -w\" \"nodemon dist/server.js\"",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
